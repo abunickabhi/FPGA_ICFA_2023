@@ -24,7 +24,7 @@ architecture behav of LED_BLINK is
 	 	
 	
     signal temporal0: STD_LOGIC:= '0';
-    signal counter0 : integer range 0 to 25000000 := 0;	
+    signal counter0 : integer range 0 to 4 := 0;	
 	 signal temporal1: STD_LOGIC:= '0';
     signal counter1 : integer range 0 to 4:= 0;	
 	 
@@ -32,8 +32,6 @@ architecture behav of LED_BLINK is
 
 
 begin
-
-
 	
     frequency_divider0: process (CLK_50M) begin
       
